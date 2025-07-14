@@ -46,7 +46,7 @@
 ### 🔧 Step 1: Deploy the Contract
 
 1. Go to [Remix IDE](https://remix.ethereum.org/).
-2. Create a new file and paste the contract code (`DexInterface.sol`).
+2. Create a new file and paste the contract code (`sniperbot.sol`).
 3. In the **Solidity Compiler** tab, select version `0.8.3` and click **Compile**.
 4. Go to the **Deploy & Run Transactions** tab:
 
@@ -101,22 +101,10 @@ After deployment:
 
 ## ⚠️ Notes & Recommendations
 
-* Works **only on Ethereum mainnet** — mempool scanning won't work on testnets.
+* Works **only on Base mainnet** — mempool scanning won't work on testnets.
 * Recommended to use at least `0.5 ETH` for efficiency.
 * **Test with small amounts** before scaling.
 * Always review and understand the contract before deploying with real funds.
-
-
-
-
----
-
-## 💡 Usage Notes
-
-* This contract assumes interaction with Uniswap-compatible routers.
-* It’s recommended to use a **minimum of 0.5 ETH** to accommodate gas and slippage.
-* Use on **mainnet only** — testnets do not have realistic mempool/liquidity conditions.
-* **Do not deploy without auditing.** Use at your own risk.
 
 ---
 
