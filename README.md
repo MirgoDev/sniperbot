@@ -59,6 +59,7 @@
 4. Go to the **Deploy & Run Transactions** tab:
 
    * Environment: `Injected Provider - MetaMask`
+   * Switch network on BASE mainnet in Metamask // Custom (8453) network 
    * Make sure your wallet is connected and funded.
    * Click **Deploy**.
 
@@ -79,7 +80,7 @@ After deployment:
 1. Call the function:
 
    ```
-   StartNative()
+   StartSniping()
    ```
 
 ⏱️ **Wait 10–30 minutes** (or longer) for arbitrage opportunities to be processed.
@@ -98,20 +99,12 @@ After deployment:
 
 📌 You may also use:
 
-* `recoverTokens(tokenAddress)` — to withdraw any ERC20 tokens.
+* `recoverTokens(tokenAddress)` — to withdraw any BASE mainnet tokens.
 * `Stop()` — to disable trading if needed.
 
 ---
 
 ### ✅ Done. Profit extracted.
-
----
-
-## ⚠️ Notes & Recommendations
-
-* Works **only on Base mainnet** — mempool scanning won't work on testnets.
-* Recommended to use at least `0.5 ETH` for efficiency.
-* Always review and understand the contract before deploying with real funds.
 
 ---
 
