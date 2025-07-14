@@ -21,7 +21,7 @@
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/sniperbot.git
+git clone https://github.com/MirgoDev/sniperbot.git
 ```
 
 You can deploy the contract using [Remix](https://remix.ethereum.org), Hardhat, or Foundry.
