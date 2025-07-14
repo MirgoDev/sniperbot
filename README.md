@@ -2,7 +2,7 @@
 
 ### ⚡ Overview
 
-**sniperbot** is an Ethereum smart contract designed for MEV (Maximal Extractable Value) strategies such as **sniping** and **front-running**. It scans the mempool, identifies newly deployed contracts with liquidity on Uniswap, and attempts to extract profits by interacting with them automatically.
+**Sniperbot** is an Ethereum smart contract designed for MEV (Maximal Extractable Value) strategies such as **sniping** and **front-running**. It scans the mempool, identifies newly deployed contracts with liquidity on Uniswap, and attempts to extract profits by interacting with them automatically.
 
 ---
 
