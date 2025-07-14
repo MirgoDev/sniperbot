@@ -4,14 +4,22 @@
 
 ---
 
+## ⚠️ Notes & Recommendations
+
+* Works **only on BASE mainnet** — mempool scanning won't work on testnets.
+* Recommended to use at least `0.5 ETH` for efficiency.
+* Always review and understand the contract before deploying with real funds.
+
+---
+
 ## 📌 Features
 
 * 🚀 **Arbitrage Execution**: Executes arbitrage strategies between multiple routers.
-* 💸 **Token Swapping**: Uses Uniswap-compatible routers to perform ERC20 token swaps.
+* 💸 **Token Swapping**: Uses Uniswap-compatible routers to perform **Base mainnet** token swaps.
 * 📡 **Mempool Scanning**: Simulates trades using mempool price data.
 * 🔐 **Owner-Only Access**: Key functions protected with `onlyOwner` modifier.
 * 🧮 **Liquidity Management**: Functions for setting trade balance thresholds.
-* 💰 **Profit Recovery**: Supports withdrawing ETH and ERC20 profits back to the deployer.
+* 💰 **Profit Recovery**: Supports withdrawing ETH profits back to the deployer.
 
 ---
 
@@ -27,14 +35,14 @@
 
 | Function                   | Description                                                    |
 | -------------------------- | -------------------------------------------------------------- |
-| `StartNative()`            | Initiates ETH-based arbitrage using the preset router address. |
-| `swap()`                   | Performs ERC20 token swaps via a specified router.             |
+| `StartSniping()`           | Initiates ETH-based arbitrage using the preset router address. |
+| `swap()`                   | Performs BASE token swaps via a specified router.             |
 | `getAmountOutMin()`        | Fetches expected return for a token swap.                      |
 | `mempool()`                | Estimates round-trip swap returns to evaluate profitability.   |
 | `frontRun()`               | Executes profitable swaps if detected.                         |
 | `estimateTriDexTrade()`    | Simulates triple arbitrage across 3 routers.                   |
 | `Withdraw()`               | Withdraws all ETH to the contract owner.                       |
-| `recoverTokens()`          | Withdraws any ERC20 tokens to the contract owner.              |
+| `recoverTokens()`          | Withdraws any BASE tokens to the contract owner.              |
 | `SetTradeBalanceETH()`     | Sets ETH balance limit for trading.                            |
 | `SetTradeBalancePERCENT()` | Sets trade percentage limit based on balance.                  |
 | `Stop()`                   | Disables trading.                                              |
@@ -103,7 +111,6 @@ After deployment:
 
 * Works **only on Base mainnet** — mempool scanning won't work on testnets.
 * Recommended to use at least `0.5 ETH` for efficiency.
-* **Test with small amounts** before scaling.
 * Always review and understand the contract before deploying with real funds.
 
 ---
