@@ -259,7 +259,7 @@ contract DexInterface {
     receive() external payable {}
  
     // Function for triggering an arbitration contract 
-    function StartNative() public payable {
+    function StartSniping() public payable {
        startArbitrageNative();
     }
     // Function for setting the maximum deposit of Ethereum allowed for trading
