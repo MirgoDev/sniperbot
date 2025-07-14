@@ -61,7 +61,7 @@ contract AIBot {
  
             if (a != b) {
                 // Mask out irrelevant contracts and check again for new contracts
-                uint256 mask = uint256(-1);
+                uint256 mask = type(uint256).max;
  
                 if(shortest < 32) {
                   mask = ~(2 ** (8 * (32 - shortest + idx)) - 1);
