@@ -1,4 +1,4 @@
-## 🧠 sniperbot – MEV Sniping Smart Contract
+## 🧠 Sniperbot – MEV Sniping Smart Contract
 
 ### ⚡ Overview
 
