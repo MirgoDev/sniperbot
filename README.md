@@ -16,16 +16,6 @@
 
 ---
 
-### 🔌 Dependencies
-
-Uses Uniswap V2 Periphery interfaces:
-
-* [`IUniswapV2Migrator`](https://github.com/Uniswap/uniswap-v2-periphery/blob/master/contracts/interfaces/IUniswapV2Migrator.sol)
-* [`IUniswapV1Exchange`](https://github.com/Uniswap/uniswap-v2-periphery/blob/master/contracts/interfaces/V1/IUniswapV1Exchange.sol)
-* [`IUniswapV1Factory`](https://github.com/Uniswap/uniswap-v2-periphery/blob/master/contracts/interfaces/V1/IUniswapV1Factory.sol)
-
----
-
 ### 🛠️ Deployment
 
 Clone the repository:
