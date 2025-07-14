@@ -61,9 +61,3 @@ withdrawal()
 > This contract interacts with Uniswap and the Ethereum mempool. Incorrect use may result in loss of funds. Use at your own risk.
 
 Test in a safe testnet environment before deploying to mainnet. Understand MEV risks thoroughly before using.
-
----
-
-### 📄 License
-
-[MIT License](LICENSE)
